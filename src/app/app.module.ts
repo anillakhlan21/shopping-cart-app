@@ -16,6 +16,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
+  {path: '', redirectTo : 'products', pathMatch: 'full'},
   { path: 'products', component: ProductListComponent },
   { path: 'cart', component: ShoppingCartComponent },
 ];
